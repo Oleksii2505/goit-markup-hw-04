@@ -98,10 +98,7 @@ img {
     color: var(--color-accent);
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
-    color: var(--color-accent);
-}
+
 
 .site-nav {
     display: flex;
@@ -160,12 +157,10 @@ img {
 .contacts-icon {
     
     margin-right: 10px;
-    fill: var(--color-primary);
+    fill: currentColor;
 }
 
-.link .contacts-icon:hover {
-    fill: var(--color-accent);
-}
+
 
 /* Стилізація Героя */
 .section.hero-section {
@@ -515,6 +510,7 @@ img {
     padding-top: 60px;
     padding-bottom: 60px;   
 }
+
 
 .footer-container {
     display: flex;
