@@ -137,10 +137,6 @@ img {
     align-items: center;
 }
 
-.link:hover,
-.link:focus {
-    fill: var(--color-accent);
-}
 
 .contacts {
     display: flex;
@@ -164,6 +160,11 @@ img {
 .contacts-icon {
     
     margin-right: 10px;
+    fill: var(--color-primary);
+}
+
+.link .contacts-icon:hover {
+    fill: var(--color-accent);
 }
 
 /* Стилізація Героя */
@@ -325,19 +326,31 @@ img {
     justify-content: space-between;
 }
 
+
+.card {
+    background-color: var(--color-white);
+    width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .member-team {
-    margin: 30px auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: auto;
+    padding-right: auto;
+    
 }
 
 .name {
-   
+
     color: var(--color-title);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    letter-spacing: 0.03em; 
+    letter-spacing: 0.03em;
     margin: 0 auto 10px;
-    text-align: center;   
+    text-align: center;
 }
 
 .position {
@@ -347,17 +360,8 @@ img {
     line-height: 1.18;
     letter-spacing: 0.03em;
     text-align: center;
-    margin-bottom: 16px;
-    
-}   
-
-.card {
-    background-color: var(--color-white);
-    width: 270px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 16px;
 }
-
 .soc-list {
     display: flex;
     justify-content: center;
@@ -567,7 +571,7 @@ img {
     color: var(--color-accent);
 }
 
-.join-title {
+.join-text {
     color: var(--color-white);
     font-weight: 700;
     font-size: 14px;
